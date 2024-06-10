@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  top: 0;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: rgba(102, 102, 102, 0.5);
+  backdrop-filter: blur(10px);
+  transition: width 0.3s, height 0.3s;
+  position: fixed;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.box.change {
+  width: 200px;
+  height: 80px;
+}
+.box.change.drop {
+  height: 291px;
+}
+.userContainer {
+  justify-items: center;
+}
+.button {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 50%;
+  background-image: url(icon/greyProfileIcon-01.webp);
+  background-size: contain;
+}
+.userName {
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline;
+  position: absolute;
+  height: 30px;
+  width: max-content;
+  margin-top: 10px;
+  align-content: center;
+  color: hsl(210, 100%, 20%);
+}
+.moreContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seeMore {
+  background-color: black;
+  padding: 3px;
+  border-radius: 10px;
+  border: none;
+  width: 30%;
+  height: 20px;
+  background-image: url(icon/dropdownicon-2-01.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s;
+}
+.seeMore.down {
+  background-image: url(icon/rollupicon-2-01.webp);
+}
+.seeMore:hover {
+  background-color: rgb(191, 191, 191);
+  color: white;
+}
+.page {
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 20px;
+  color: black;
+  text-decoration-line: none;
+}
+.li {
+  margin: 10px;
+  height: 21px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.li:hover {
+  background-color: rgba(231, 231, 231, 0.75);
+}
+.li > .homeIcon {
+  width: 30px;
+  height: 30px;
+  background-image: url(icon/greyHomeIcon-2-01.webp);
+  background-size: contain;
+  background-color: black;
+  position: absolute;
+  left: 20px;
+  border-radius: 15px;
+}
+.li > .searchIcon {
+  width: 30px;
+  height: 30px;
+  background-image: url(icon/greySearchIcon-1-01.webp);
+  background-size: contain;
+  background-color: black;
+  position: absolute;
+  left: 20px;
+  border-radius: 15px;
+}
+.figimg {
+  width: 100%;
+  height: 400px;
+  font-size: 2rem;
+  background-image: url(img/left_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.figimg > h1 {
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(rgb(207, 255, 129), rgb(67, 141, 67));
+  background-clip: text;
+  color: transparent;
+}
+.figimg > p {
+  width: 100%;
+  text-align: center;
+  color: skyblue;
+}
+.themeicon {
+  width: 50px;
+  height: 50px;
+  background-image: url(icon/lightmode.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: fixed;
+  margin: 10px;
+  right: 0;
+  border-radius: 25px;
+  border: none;
+  transition: all 0.3s;
+}
+.themeicon.change {
+  background-image: url(icon/darkmode.webp);
+  color: black;
+}
+.wholepage {
+  background-image: white;
+  transition: color 2s, background-image 0.3s;
+}
+.wholepage.change {
+  background-image: linear-gradient(45deg, rgb(15, 41, 63), rgb(40, 18, 53));
+  color: rgb(255, 238, 215);
+}
